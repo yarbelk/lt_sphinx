@@ -1,0 +1,2 @@
+Sphinx==1.2b1
+path.py==4.1
