@@ -27,3 +27,29 @@ def eggs(with_spam=True):
         # yeah right
         pass
     return "Spam with Spam"
+
+class Spam(object):
+    """This is Spam, it is all Spam"""
+    is_egg = None
+    is_spam = None
+
+    def __init__(self):
+        """There is always spam, set up the Spam for use with other tasty
+        foods, like :class:`lt_sphinx.eggs.Egg` (actually, it is `Spam`).
+        """
+        self.is_egg = False
+        self.is_spam = True
+
+    @classmethod
+    def open_can(cls, number):
+        """
+        open `number` cans of spam
+
+        :param number: Number of cans, must be postive
+        :type number: positive int
+        :returns: [:class:`lt_sphinx.spam.Spam`]
+        :raises: :exc:`AssertionError`
+        """
+
+        assert number > 0
+        return [cls() for x in xrange(number)]
