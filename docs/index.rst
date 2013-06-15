@@ -11,6 +11,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   lt_sphinx
+
+   modules
+
 
 
 Indices and tables
