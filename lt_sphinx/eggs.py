@@ -2,7 +2,6 @@
 .. module:: lt_sphinx.eggs
 
 We've added a new module.  This will have some classes and methods
-
 """
 
 
